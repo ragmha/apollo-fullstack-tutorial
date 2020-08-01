@@ -21,3 +21,10 @@
 * `RESTDataSource` class is an extension of `DataSource` which can handle fetching data from REST API
 
 * `RESTDataSource` class automatically caches responses from REST resources with no additional setup, this feature is called `partial query caching`
+
+* A resolver is a function that's responsible for populating the data for a single field in your schema. It reutns one of the following:
+
+  * Data of the type required by the resolver's corresponding schema field(string,integer,object, etc)
+  * A promise that fulfills with data of the required type
+
+* `_` convention to indicate that they don't use its value, `__` secon poitional argument not used
